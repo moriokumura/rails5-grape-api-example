@@ -12,11 +12,12 @@ This is an example application using [Rails 5](http://rubyonrails.org/) + [Grape
    $ cd rails5-grape-api-example
    ```
 
-2. Install dependencies
+2. Setup application
 
    ```
    $ bundle
    $ rails db:setup
+   $ rails s
    ```
 
 3. Watch the specs pass
@@ -25,6 +26,12 @@ This is an example application using [Rails 5](http://rubyonrails.org/) + [Grape
    $ rspec
    ... 0 failures
    ```
+
+4. Play around with APIs
+
+  ```
+  $ open http://localhost:300/docs 
+  ```
 
 # Dependencies:
 * Ruby version: 2.3.1
