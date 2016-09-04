@@ -40,7 +40,7 @@ I use the [rack-cors gem!](https://github.com/cyu/rack-cors). This gem provides 
 ## Grape Swagger
 The [grape-swagger gem](https://github.com/tim-vandecasteele/grape-swagger) autogenerates Swagger-compliant documentation for your Grape API.
 
-* Visit http://petstore.swagger.io/ and paste http://localhost:3000/api/v1/swagger_doc.json to explore the API.
+* Visit http://petstore.swagger.io/ and open http://localhost:3000/swagger_doc to explore the API.
 * Open http://localhost:300/docs to play around API documentation powered by [grape-swagger-rails gem](https://github.com/ruby-grape/grape-swagger-rails).
 
 ## Versioning
@@ -79,6 +79,10 @@ User Authorization token will be set in headers['Authorization']
   
   + `prev_pave = -1` if current_page = 1
   + `next_pave = -1` if current_page = last_page
+
+# Routes
+* `rails routes` for normal Rails routes
+* `rails grape:routes` for Grape generated routes
 
 # Resources
 * http://www.thegreatcodeadventure.com/making-a-rails-api-with-grap
