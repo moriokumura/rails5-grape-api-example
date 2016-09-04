@@ -15,19 +15,20 @@ This is an example application using [Rails 5](http://rubyonrails.org/) + [Grape
 2. Install dependencies
 
    ```
-   $ bundle install
+   $ bundle
+   $ rails db:setup
    ```
 
 3. Watch the specs pass
 
    ```
-   $ bin/rspec spec/api
+   $ rspec
    ... 0 failures
    ```
 
 # Dependencies:
 * Ruby version: 2.3.1
-* Rails version: 5.0
+* Rails version: 5.0.0.1
 
 # Features
 ## Utilize CORS (Cross-Origin Resource Sharing)
@@ -40,6 +41,7 @@ I use the [rack-cors gem!](https://github.com/cyu/rack-cors). This gem provides 
 The [grape-swagger gem](https://github.com/tim-vandecasteele/grape-swagger) autogenerates Swagger-compliant documentation for your Grape API.
 
 * Visit http://petstore.swagger.io/ and paste http://localhost:3000/api/v1/swagger_doc.json to explore the API.
+* Open http://localhost:300/docs to play around API documentation powered by [grape-swagger-rails gem](https://github.com/ruby-grape/grape-swagger-rails).
 
 ## Versioning
 Api Version will be set in headers['Accept'] = "application/vnd.#{vendor}-v#{version}"
