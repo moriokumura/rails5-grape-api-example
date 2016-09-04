@@ -61,6 +61,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'grape-active_model_serializers'
 gem 'grape_on_rails_routes'
 gem 'grape-swagger'
+gem 'grape-swagger-rails'
 
 # Paging
 gem 'kaminari'
